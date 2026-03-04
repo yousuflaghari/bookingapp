@@ -145,7 +145,6 @@ export default function Login() {
 
   return (
     <div style={{ minHeight: "100vh" }}>
-      <Header />
 
       <Section>
         <Title>Login</Title>

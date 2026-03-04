@@ -3,11 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header";
 import { theme } from "./theme";
-
+import Register from "./pages/register/Page"
+import Login from "./pages/login/Page"
 import Home from "./pages/home/Page";
-import About from "./pages/about/Page";
-import Hotels from "./pages/hotels/Page";
-import Restaurants from "./pages/restaurants/Page";
+
 
 const App = () => {
   return (
@@ -16,9 +15,9 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/hotels" element={<Hotels />} />
-          <Route path="/restaurants" element={<Restaurants />} />
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/login" element={<Login/>}/>
+
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
